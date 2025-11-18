@@ -78,3 +78,35 @@ core/2.17/reference_appendices/interpreter_discovery.html for more information.
 2025-11-18 00:09:14,023 p=3124 u=jazmin n=ansible | PLAY RECAP **************************************************************************************************************************
 2025-11-18 00:09:14,023 p=3124 u=jazmin n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
 2025-11-18 00:09:14,024 p=3124 u=jazmin n=ansible | localhost                  : ok=8    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-11-18 16:00:08,634 p=6653 u=jazmin n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2025-11-18 16:00:08,760 p=6653 u=jazmin n=ansible | PLAY [all] *****************************************************************************************************************************************
+2025-11-18 16:00:08,767 p=6653 u=jazmin n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************
+2025-11-18 16:00:08,911 p=6653 u=jazmin n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\njazmin@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2025-11-18 16:00:09,804 p=6653 u=jazmin n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-11-18 16:00:09,804 p=6653 u=jazmin n=ansible | ok: [localhost]
+2025-11-18 16:00:09,814 p=6653 u=jazmin n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************************************
+2025-11-18 16:00:09,841 p=6653 u=jazmin n=ansible | included: 2do_parcial for localhost
+2025-11-18 16:00:09,849 p=6653 u=jazmin n=ansible | TASK [2do_parcial : debug] *************************************************************************************************************************
+2025-11-18 16:00:09,861 p=6653 u=jazmin n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2025-11-18 16:00:09,872 p=6653 u=jazmin n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/alumno y equipo] *************************************************************************
+2025-11-18 16:00:10,161 p=6653 u=jazmin n=ansible | ok: [localhost] => (item=alumno)
+2025-11-18 16:00:10,328 p=6653 u=jazmin n=ansible | ok: [localhost] => (item=equipo)
+2025-11-18 16:00:10,339 p=6653 u=jazmin n=ansible | TASK [2do_parcial : Generar archivo datos_alumno.txt desde template] *******************************************************************************
+2025-11-18 16:00:10,778 p=6653 u=jazmin n=ansible | ok: [localhost]
+2025-11-18 16:00:10,786 p=6653 u=jazmin n=ansible | TASK [2do_parcial : Generar archivo datos_equipo.txt desde template] *******************************************************************************
+2025-11-18 16:00:11,224 p=6653 u=jazmin n=ansible | changed: [localhost]
+2025-11-18 16:00:11,233 p=6653 u=jazmin n=ansible | TASK [2do_parcial : No contraseña para el grupo 2PSupervisores desde sudoers.d] ********************************************************************
+2025-11-18 16:00:11,522 p=6653 u=jazmin n=ansible | ok: [localhost]
+2025-11-18 16:00:11,537 p=6653 u=jazmin n=ansible | TASK [Otra tarea] **********************************************************************************************************************************
+2025-11-18 16:00:11,548 p=6653 u=jazmin n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2025-11-18 16:00:11,549 p=6653 u=jazmin n=ansible | PLAY RECAP *****************************************************************************************************************************************
+2025-11-18 16:00:11,549 p=6653 u=jazmin n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-11-18 16:00:11,550 p=6653 u=jazmin n=ansible | localhost                  : ok=8    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

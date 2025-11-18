@@ -1,3 +1,3 @@
-IP: 192.168.56.3
-Distribucion: Ubuntu 22.04.5 
-Cantidad de Cores: 2
+IP: {{ ansible_default_ipv4.address }}
+Nombre Distribucion= {{ ansible_facts.distribution }}
+Cantidad de Cores : {{ ansible_processor_cores }}
