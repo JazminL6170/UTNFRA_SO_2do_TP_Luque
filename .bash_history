@@ -958,3 +958,9 @@ git commit -m "agregando carpeta RTA_Examen"
 git push
 history -a
 cp $HOME/.bash_history
+cp $HOME/.bash_history .
+git add .bash_history
+git status
+git commit -m "Agrega el archivo .bash_history"
+git push
+tree -L 2
