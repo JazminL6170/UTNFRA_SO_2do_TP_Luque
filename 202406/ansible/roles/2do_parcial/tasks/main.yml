@@ -1,0 +1,33 @@
+---
+# tasks file for 2do_parcial
+
+- debug:
+    msg: "Tareas del 2do Parcial"
+
+- name: "Crear directorios en /tmp/2do_parcial/alumno y equipo"
+  file:
+    path: "/tmp/2do_parcial/{{ item }}"
+    state: directory
+    mode: '0775'
+    recurse: yes
+  with_items: 
+    - "alumno"
+    - "equipo"
+      
+- name: "Generar archivo datos_alumno.txt desde template"
+  template:
+    src: datos_alumno.j2
+    dest: /tmp/2do_parcial/alumno/datos_alumno.txt
+
+- name: Generar archivo datos_equipo.txt desde template
+  template:
+    src: datos_equipo.j2
+    dest: /tmp/2do_parcial/equipo/datos_equipo.txt
+
+- name: "No contraseña para el grupo 2PSupervisores desde sudoers.d"
+  become: yes
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    line: '%2PSupervisores ALL=(ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
