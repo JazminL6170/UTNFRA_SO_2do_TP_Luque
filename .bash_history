@@ -964,3 +964,180 @@ git status
 git commit -m "Agrega el archivo .bash_history"
 git push
 tree -L 2
+cp $HOME/.bash_history . 
+git status
+ls -la
+git add .
+git push
+ls -la
+tree -L 2
+tree -a -L 2
+tree -L 2
+cd ~
+ls -l
+cd ..
+ls -l
+cd jazmin
+cat README.md
+cat << FIN> README.md
+TP_AySO
+
+Alumno: Jazmin Luque
+División: 116
+Turno: Mañana
+FIN
+
+cat << FIN> README.md
+TP_AySO
+
+Alumno: Jazmin Luque
+División: 116
+Turno: Mañana
+FIN
+
+git add .
+ls -l
+cp -r README.md ~/UTNFRA_SO_2do_TP_Luque/
+git add .
+git status
+cd UTNFRA_SO_2do_TP_Luque/
+git add .
+git commit -m "ADD:README con mis datos"
+git status
+git push
+tree -L 2
+git commit -m "Commit final: Agrega README, actualizo bash_history y archivos del TP"
+git push
+cd ~
+cd RTA_Examen_20251117/
+rm .Punto_B.sh.swp
+git add .
+cd ..
+ls -l
+cd UTNFRA_SO_2do_TP_Luque/
+git add .
+git commit -m "Corrigiendo"
+git status
+git push
+git add .
+git status
+ls .l
+ls -l
+cd RTA_Examen_20251117/
+ls -l
+git status
+cd ..
+git commit -m "Corrigiendo..."
+git add .
+git commit -m "Corrigiendo cosas..."
+git rm --cached RTA_Examen_20251117/.Punto_B.sh.swp
+git add .
+git status
+git push
+exit
+cd ~
+ls -l
+cd UTNFRA_SO_2do_TP_Luque/
+ls -l
+cd 202406
+ls -l
+cd ansible/
+ls -l
+cd roles/
+ls -l
+cd 2do_parcial/
+ls -l
+cd templates/
+ls -l
+cat datos_equi
+cat datos_equipo.j2 
+ansible localhost -m setup
+cd ~
+ls -l
+UTNFRA_SO_2do_TP_Luque/
+cd utnf
+cd UTNFRA_SO_2do_TP_Luque/
+ls -l
+cd 202406
+ls -l
+cd ansible/
+ls -l
+cs roles/
+cd roles/
+ls -l
+cd 2do_parcial/
+ls -l
+cd templates/
+ls -l
+vim datos_equipo.j2 
+cd :~/UTNFRA_SO_2do_TP_Luque
+cd :~/UTNFRA_SO_2do_TP_Luque/
+cd ~
+ls -l
+cd RTA_Examen_20251117/
+ls -l
+bash Punto_D.sh
+cat Punto_D.sh
+cd ..
+cd UTNFRA_SO_2do_TP_Luque/
+tree
+ansible-playbook -i ../ansible/inventory/hosts ../ansible/playbook.yml
+cd ~/UTFNRA_SO_2do_TP_Luque/ansible/playbook.yml
+cd ~/UTFNRA_SO_2do_TP_Luque/ansible/
+cd ~/UTFNRA_SO_2do_TP_Luque/ansible
+ls -l
+cd 202406
+ls -l
+cd ansible
+ls -
+ls -l
+ansible-playbook -i inventory/hosts playbook.yml
+ls -l
+cd /
+ls -l
+cd tmp
+ls -l
+cd 2do_parcial/
+ls -l
+cat alumno/
+cd alumno/
+ls -l
+cat datos_alumno.txt 
+cd ..
+cd equipo/
+ls -l
+cat datos_equipo.txt 
+exit
+git status
+cd ..
+cd ~
+ls -l
+git status
+.git
+cd UTNFRA_SO_2do_TP_Luque/
+git status
+git add .
+git push
+git commit -m "modificando"
+git push
+git pull origin main
+git add .
+git commit -m "modificando"
+git push
+git pull --no-rebase origin main
+git push origin main
+cd 202406
+cd ansible/
+cd roles/
+cd 2do_parcial/
+ls -l
+cd templates/
+ls -l
+cat datos_equipo.j2 
+cd ~
+history -w
+git status
+cd UTNFRA_SO_2do_TP_Luque/
+git status
+history -w
+git status
